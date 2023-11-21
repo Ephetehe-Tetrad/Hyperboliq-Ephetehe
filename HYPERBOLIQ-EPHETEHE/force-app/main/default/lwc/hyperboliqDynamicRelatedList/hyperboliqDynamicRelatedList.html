@@ -1,0 +1,24 @@
+<template>
+    <lightning-card
+        title="HyperBoliq Dynamic Related List"
+        icon-name="custom:custom15"
+    >
+        <div class="slds-var-m-around_medium">
+            <h1>The record Id: {recordId} </h1>
+            <template lwc:if={contacts.data}>
+                <lightning-datatable
+                    key-field="Id"
+                    data={contacts.data}
+                    columns={columns}
+                    onsave={handleSave}
+                    draft-values={draftValues}
+                    hide-checkbox-column
+                >
+                </lightning-datatable>
+            </template>
+            <template lwc:elseif={contacts.error}>
+                <h1 class="error-h1">{contacts.error}</h1>
+            </template>
+        </div>
+    </lightning-card>
+</template>

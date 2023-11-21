@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>HyperboliqDynamicRelListCtrl</members>
+        <members>ContactTriggerHelper</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>ContactTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>Contact</members>
+        <members>Medical_Info__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>hyperboliqDynamicRelatedList</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <version>58.0</version>
+</Package>
